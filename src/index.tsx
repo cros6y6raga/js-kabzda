@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {splitIntoWords} from "./01-hello-tests/01";
 import {sum} from "./03/03";
+import {User} from "./06/06-callback";
 
 const sentense = 'Hello my friend!';
 const result = splitIntoWords(sentense)
@@ -17,9 +18,9 @@ const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
-    <React.StrictMode>
-        <App/>
-    </React.StrictMode>
+    // <React.StrictMode>
+        <User/>
+    // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
